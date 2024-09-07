@@ -9,9 +9,6 @@ import spacy
 
 nlp = spacy.load('en_core_web_lg')
 
-MY_GCUBE_TOKEN = '07e1bd33-c0f5-41b0-979b-4c9a859eec3f-843339462'
-
-
 def wiki_spacy_extract_chunk(d):
     nlp = spacy.load('en_core_web_lg')
     nlp.add_pipe("entityLinker", last=True)
